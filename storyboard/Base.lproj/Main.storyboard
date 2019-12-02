@@ -1,26 +1,1068 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Psg-Og-aLl">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--kozmo-->
+        <scene sceneID="zgJ-vp-4Ei">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vKt-tA-YQ0" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="IZW-Oe-4C1"/>
+                        <viewControllerLayoutGuide type="bottom" id="iUg-J4-xno"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="oKL-HJ-L34">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHo-n0-rTN">
+                                <rect key="frame" x="16" y="80" width="84" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="星茲農家女孩"/>
+                                <connections>
+                                    <segue destination="zI2-dK-Gtd" kind="show" id="tda-lc-gOD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayQ-77-i6y">
+                                <rect key="frame" x="150" y="240" width="84" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="星茲稻草人"/>
+                                <connections>
+                                    <segue destination="jGv-yI-Od1" kind="show" id="NuJ-ly-n1p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huZ-PY-xwV">
+                                <rect key="frame" x="284" y="240" width="84" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="星茲 暗黑星食者"/>
+                                <connections>
+                                    <segue destination="NOK-Al-eyu" kind="show" id="xtv-sm-2l0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNE-Pl-OVE">
+                                <rect key="frame" x="16" y="240" width="84" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="星茲鈦戰機"/>
+                                <connections>
+                                    <segue destination="Tou-0t-Sh9" kind="show" id="6GA-hi-BfW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70d-0X-gMM">
+                                <rect key="frame" x="284" y="160" width="84" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="魔星茲邪魔女"/>
+                                <connections>
+                                    <segue destination="Edf-p8-kJQ" kind="show" id="ylV-Nb-07p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqH-FS-J0B">
+                                <rect key="frame" x="150" y="160" width="84" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="星茲暗黑驅逐艦"/>
+                                <connections>
+                                    <segue destination="cXc-M7-Z8w" kind="show" id="5ni-5g-ghE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNU-gf-YhR">
+                                <rect key="frame" x="16" y="160" width="84" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="星茲先驅者"/>
+                                <connections>
+                                    <segue destination="Jru-Hb-fc4" kind="show" id="iyO-bd-eUE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrN-hh-dCN">
+                                <rect key="frame" x="150" y="80" width="84" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="星茲善魔女"/>
+                                <connections>
+                                    <segue destination="tL7-2c-EPv" kind="show" id="s3T-e8-qyh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkA-EF-PDr">
+                                <rect key="frame" x="284" y="80" width="84" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="星茲瞬逝騎手"/>
+                                <connections>
+                                    <segue destination="73R-Dg-rWq" kind="show" id="673-fU-f94"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iB-6X-uGa">
+                                <rect key="frame" x="16" y="320" width="84" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="星茲 三角穿梭機"/>
+                                <connections>
+                                    <segue destination="lJP-Nz-By3" kind="show" id="wOE-sj-j7F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltF-XD-ufo">
+                                <rect key="frame" x="150" y="320" width="84" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="星茲 飛行突擊隊"/>
+                                <connections>
+                                    <segue destination="BSa-FX-q73" kind="show" id="JlI-GU-JYz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbq-3J-3ei">
+                                <rect key="frame" x="284" y="320" width="84" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="星茲 鐵罐人"/>
+                                <connections>
+                                    <segue destination="BT2-Fg-rZx" kind="show" id="QTw-em-CsP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYh-My-yku">
+                                <rect key="frame" x="16" y="400" width="84" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="魔星茲 膽小獅子"/>
+                                <connections>
+                                    <segue destination="gc0-We-vQK" kind="show" id="tYl-Cj-MVY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="La4-bf-dkH">
+                                <rect key="frame" x="150" y="400" width="84" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="星茲 黑暗淑女"/>
+                                <connections>
+                                    <segue destination="hak-Ci-g5H" kind="show" id="WGf-ua-f6H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVc-r1-sPf">
+                                <rect key="frame" x="284" y="400" width="84" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="星茲 地行者"/>
+                                <connections>
+                                    <segue destination="GKs-ZD-bF5" kind="show" id="pbk-i0-7dg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyF-eb-Obp">
+                                <rect key="frame" x="16" y="480" width="84" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="星茲 黑暗行星"/>
+                                <connections>
+                                    <segue destination="QlS-TP-SUG" kind="show" id="Dtu-gL-jKe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAW-8X-uw4">
+                                <rect key="frame" x="150" y="480" width="84" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="星茲鎮"/>
+                                <connections>
+                                    <segue destination="P7V-AT-LG7" kind="show" id="xtj-bM-lDC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOj-81-X3v">
+                                <rect key="frame" x="284" y="480" width="84" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="星兹光劍"/>
+                                <connections>
+                                    <segue destination="cn9-EX-AXd" kind="show" id="1pQ-sn-VtD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkW-fa-ZPA">
+                                <rect key="frame" x="150" y="560" width="84" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="星茲悲嘆"/>
+                                <connections>
+                                    <segue destination="PTT-gF-p0R" kind="show" id="PX7-Zv-EBA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClG-yM-qVo">
+                                <rect key="frame" x="16" y="560" width="84" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="星茲魔力"/>
+                                <connections>
+                                    <segue destination="hXW-ot-a0j" kind="show" id="4ow-Of-GTx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="kozmo" id="6eC-hr-1Qb">
+                        <barButtonItem key="rightBarButtonItem" id="KLE-FU-Omr"/>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CsB-GG-ss1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="4847.1999999999998" y="-700.29985007496259"/>
+        </scene>
+        <!--星茲農家女孩-->
+        <scene sceneID="tD5-Lg-QXJ">
+            <objects>
+                <viewController id="zI2-dK-Gtd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PbB-v6-jh4"/>
+                        <viewControllerLayoutGuide type="bottom" id="BkD-m2-jV9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YfF-lD-aGv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hVe-dP-U0J">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kozmo girl" translatesAutoresizingMaskIntoConstraints="NO" id="0m3-yT-2ZR">
+                                <rect key="frame" x="55" y="80" width="286" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoZ-xa-vp1">
+                                <rect key="frame" x="55" y="381" width="286" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">效果怪獸 3 光 超能族 1500/1000
+「Kozmo Farmgirl」的①效果一回合只能使用一次。
+①：移除此卡來發動，從手牌特殊召喚一體等級四以上「Kozmo」怪獸。這個效果在對手
+回合也能使用。
+②：此卡給予對手戰鬥傷害時，支500分來發動，從牌組將一張「Kozmo」卡片加入手牌。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="星茲農家女孩" id="uHK-zn-Bzh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SmO-xC-sCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5935" y="-1420"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sWE-Al-pwn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Psg-Og-aLl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="CZW-uu-kDx"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M4r-JZ-djq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vKt-tA-YQ0" kind="relationship" relationship="rootViewController" id="JeD-F9-get"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="osj-jN-QQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4066.4000000000001" y="-700.29985007496259"/>
+        </scene>
+        <!--星茲善魔女-->
+        <scene sceneID="kb6-p6-DAY">
+            <objects>
+                <viewController id="tL7-2c-EPv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wiu-4H-NN5"/>
+                        <viewControllerLayoutGuide type="bottom" id="qAy-k3-c8u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HLK-fK-nVj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wWI-qV-keJ">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="星茲膳魔女" translatesAutoresizingMaskIntoConstraints="NO" id="CfL-1I-lM1">
+                                <rect key="frame" x="55" y="80" width="286" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bA-fS-o5a">
+                                <rect key="frame" x="55" y="381" width="286" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">效果怪獸 4 光 超能族 1800/1000
+「Kozmo Goodwitch」的①效果一回合只能使用一次。
+①：移除此卡來發動，從手牌特殊召喚一體等級五以上「Kozmo」怪獸。這個效果在對手
+回合也能使用。
+②：一回合一次，支付500分並選擇對手場上一張表側表示怪獸來發動，該怪變為裡側守
+備表示。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="星茲善魔女" id="TBO-xL-3OJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7xP-C2-NLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6806" y="-1420"/>
+        </scene>
+        <!--星茲先驅者-->
+        <scene sceneID="etC-yn-bgS">
+            <objects>
+                <viewController id="Jru-Hb-fc4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qr1-xO-Rcs"/>
+                        <viewControllerLayoutGuide type="bottom" id="Axr-Qj-Qnc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fbg-6E-uNR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6g0-CJ-oiU">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="先驅" translatesAutoresizingMaskIntoConstraints="NO" id="lqh-Sm-3U5">
+                                <rect key="frame" x="55" y="80" width="286" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0U-ge-fIB">
+                                <rect key="frame" x="55" y="381" width="286" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">效果怪獸 7 光 機械族 2800/1400
+①：此卡不會成為對手效果的對象。
+②：我方準備階段可以發動，回復1000分。
+③：此卡因為戰鬥或效果破壞送入墓地的場合，移除墓地的此卡來發動，從牌組特殊召喚
+一體等級六以下「Kozmo」怪獸。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="星茲先驅者" id="7Hx-nK-WHf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oal-Qs-fxH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5935" y="-701"/>
+        </scene>
+        <!--星茲瞬逝騎手-->
+        <scene sceneID="T5x-e4-Mcs">
+            <objects>
+                <viewController title="星茲瞬逝騎手" id="73R-Dg-rWq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3dg-qE-FAY"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Tt-Vv-bUm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yzy-Om-sTf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eeA-5c-wzE">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kozmo sliprider" translatesAutoresizingMaskIntoConstraints="NO" id="Td5-R1-xWT">
+                                <rect key="frame" x="55" y="80" width="286" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99x-qz-Kx0">
+                                <rect key="frame" x="55" y="381" width="286" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">效果怪獸 5 光 機械族2300/800
+
+①：此卡召喚‧特殊召喚成功的場合，可以選擇場上一張魔法‧陷阱卡來發動，該卡破壞
+②：此卡因為戰鬥或效果破壞送入墓地的場合，移除墓地的此卡來發動，從牌組特殊召喚
+一體等級四以下「Kozmo」怪獸。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="星茲瞬逝騎手" id="GL4-ld-T63"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fvI-5e-LH9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7645" y="-1420"/>
+        </scene>
+        <!--星茲暗黑驅逐艦-->
+        <scene sceneID="Med-ST-hrs">
+            <objects>
+                <viewController id="cXc-M7-Z8w" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YUR-c5-NmT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wc0-d7-fBe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="llu-C7-4Vs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BAy-9R-SKS">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kozmo dark destroyer" translatesAutoresizingMaskIntoConstraints="NO" id="9qK-Kt-E3c">
+                                <rect key="frame" x="55" y="80" width="286" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4B-sg-Dhi">
+                                <rect key="frame" x="55" y="381" width="286" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">效果怪獸 8 闇 機械 3000/1800
+①：此卡召喚·特殊召喚成功的場合，可以選擇場上一隻怪獸發動，選擇的怪獸破壞
+②：此卡不會成為對手的效果對象
+③：此卡被戰鬥破壞或是卡片效果破壞送墓的場合，可以把墓地的此卡除外
+從牌組特召一隻等級7以下的"Kozmo"怪獸
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="星茲暗黑驅逐艦" id="JKb-OD-cSJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lmS-ST-FpK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6806" y="-701"/>
+        </scene>
+        <!--魔星茲邪魔女-->
+        <scene sceneID="cr4-xP-o0j">
+            <objects>
+                <viewController id="Edf-p8-kJQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4BA-dN-PWI"/>
+                        <viewControllerLayoutGuide type="bottom" id="ijX-FW-swN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sdI-sd-zbA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rje-6Z-1yq">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="邪魔女" translatesAutoresizingMaskIntoConstraints="NO" id="e6o-dI-7aH">
+                                <rect key="frame" x="55" y="80" width="286" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2Z-dz-XdF">
+                                <rect key="frame" x="55" y="381" width="286" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">效果怪獸 8 闇 機械 3000/1800
+①：此卡召喚·特殊召喚成功的場合，可以選擇場上一隻怪獸發動，選擇的怪獸破壞
+②：此卡不會成為對手的效果對象
+③：此卡被戰鬥破壞或是卡片效果破壞送墓的場合，可以把墓地的此卡除外
+從牌組特召一隻等級7以下的"Kozmo"怪獸
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="魔星茲邪魔女" id="yd2-Wr-mjG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E26-oP-fUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7645" y="-701"/>
+        </scene>
+        <!--星茲鈦戰機-->
+        <scene sceneID="Y68-5Q-lHq">
+            <objects>
+                <viewController id="Tou-0t-Sh9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aRh-SN-FEf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Th4-4g-Cl0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8m1-7o-dOp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iBe-3U-yoD">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="太戰機" translatesAutoresizingMaskIntoConstraints="NO" id="qYq-1d-0I2">
+                                <rect key="frame" x="55" y="80" width="286" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3J-0m-Tzk">
+                                <rect key="frame" x="55" y="381" width="286" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">效果怪獸 6 暗 機械 2000/2400
+①：一回合一次在準備階段可以發動，特殊召喚一隻"DOG Fighter Token"(機械族·暗
+·等級6 2000/2400)
+②：此卡被戰鬥或卡片效果破壞送墓的場合，可以把墓地的此卡除外，從牌組特召
+一隻等級五以下的"Kozmo"怪獸</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="星茲鈦戰機" id="THh-Mr-Se7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PHS-Bq-XLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5935" y="55"/>
+        </scene>
+        <!--星茲稻草人-->
+        <scene sceneID="XV6-jP-gmO">
+            <objects>
+                <viewController id="jGv-yI-Od1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WhE-yL-Z5P"/>
+                        <viewControllerLayoutGuide type="bottom" id="256-Fg-ntz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xBV-68-Mi7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EPJ-2u-fUT">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kozmo starwman" translatesAutoresizingMaskIntoConstraints="NO" id="Xh7-jl-Euw">
+                                <rect key="frame" x="55" y="80" width="286" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11L-w8-uIM">
+                                <rect key="frame" x="55" y="381" width="286" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">效果怪獸 2 光 超能 500/1800
+「Kozmo Strawman」的①效果一回合只能使用一次。
+①：將此卡除外，從手牌特殊召喚一隻等級三以上的「Kozmo」怪獸。
+此效果在對手回合也能發動。
+②：一回合一次，支付 500點生命值，選擇移除區我方一張「Kozmo」怪獸來發動，
+該怪獸特殊召喚。此效果特殊召喚的怪獸效果無效化，結束階段破壞。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="星茲稻草人" id="4Yt-HF-Pb5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fMU-pu-o87" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6806" y="55"/>
+        </scene>
+        <!--星茲 暗黑星食者-->
+        <scene sceneID="ghU-kx-Wcs">
+            <objects>
+                <viewController id="NOK-Al-eyu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jN1-4q-5XN"/>
+                        <viewControllerLayoutGuide type="bottom" id="uSq-SL-6SO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b0i-b5-giP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J4h-5R-kU4">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="暗黑星時者" translatesAutoresizingMaskIntoConstraints="NO" id="y9w-BM-y6B">
+                                <rect key="frame" x="55" y="80" width="286" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIf-VU-bps">
+                                <rect key="frame" x="55" y="381" width="286" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">效果怪獸 9 光 機械 3000/2600
+
+效果：不能成為對方的卡的效果的對象。在自己或者對方回合，陷阱卡發動時：可以把墓地的1只「星茲」怪獸除外；那個發動無效並破壞。這張卡被戰鬥或者卡的效果破壞送去墓地的場合：可以把墓地的這張卡除外；從卡組把1只8星以下的「星茲」怪獸加入手卡。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="星茲 暗黑星食者" id="9Sz-Hj-Zjc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fBm-iz-vaz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7645" y="55"/>
+        </scene>
+        <!--星茲 三角穿梭機-->
+        <scene sceneID="qcb-T6-3bS">
+            <objects>
+                <viewController id="lJP-Nz-By3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JFg-kG-G8H"/>
+                        <viewControllerLayoutGuide type="bottom" id="TzK-8Z-HBr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ad0-Ho-5Ip">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cOH-gj-dz6">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="三角肌" translatesAutoresizingMaskIntoConstraints="NO" id="JYt-bZ-gED">
+                                <rect key="frame" x="55" y="80" width="286" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfY-V5-KQR">
+                                <rect key="frame" x="55" y="381" width="286" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">效果怪獸 5 光 機械 2000/2000
+
+效果：1回合1次：可以從卡組把1只「星茲」怪獸送去墓地，之後選擇場上1只表側表示怪獸；那只怪獸的攻擊力·守備力下降送去墓地的那只怪獸的等級×100。這張卡被戰鬥或者卡的效果破壞送去墓地的場合：可以把墓地的這張卡除外；從卡組把1只4星以下的「星茲」怪獸特殊召喚。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="星茲 三角穿梭機" id="N9N-hm-uYk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2lN-zY-PlF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5935" y="789"/>
+        </scene>
+        <!--星茲 飛行突擊隊-->
+        <scene sceneID="fV8-wG-pyJ">
+            <objects>
+                <viewController id="BSa-FX-q73" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zhb-qj-sdJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="0of-Oq-TDN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lbz-07-Hgt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cjy-FW-g2r">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="風暴冰" translatesAutoresizingMaskIntoConstraints="NO" id="h6x-0C-CxC">
+                                <rect key="frame" x="55" y="80" width="286" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVc-bj-LxB">
+                                <rect key="frame" x="55" y="381" width="286" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">效果怪獸 3 闇 超能 1000/1000
+
+效果：在自己或者對方回合：可以把這張卡除外；從手卡把1只4星以上的「星茲」怪獸特殊召喚。「星茲 飛行突擊隊」的這個效果1回合只能使用1次。1回合1次：可以支付1000基本分，之後選擇自己墓地1只念動力族「星茲」怪獸；那只怪獸特殊召喚。
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="星茲 飛行突擊隊" id="xss-BU-3nT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0KO-cb-oyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6806" y="788"/>
+        </scene>
+        <!--星茲 鐵罐人-->
+        <scene sceneID="U5w-cC-SGf">
+            <objects>
+                <viewController id="BT2-Fg-rZx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MX7-iF-uYM"/>
+                        <viewControllerLayoutGuide type="bottom" id="XJJ-HT-uWs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nRM-tn-jQ2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vDQ-OP-nXt">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="鐵罐" translatesAutoresizingMaskIntoConstraints="NO" id="t6h-zn-RR8">
+                                <rect key="frame" x="55" y="80" width="286" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMX-03-Ynq">
+                                <rect key="frame" x="55" y="381" width="286" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">效果怪獸 1 光 超能 0/0
+
+效果：在自己或者對方回合：可以把這張卡除外；從手卡把1只2星以上的「星茲」怪獸特殊召喚。「星茲 鐵罐人」的這個效果1回合只能使用1次。1回合1次，在結束階段時：可以支付500基本分；從卡組把3張卡名不同的“「星茲」卡給對方觀看，對方從那之中隨機選1張加入自己手卡，把剩餘送去墓地。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="星茲 鐵罐人" id="HVz-V0-Kw7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nxs-PN-5JT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7645" y="788"/>
+        </scene>
+        <!--魔星茲 膽小獅子-->
+        <scene sceneID="BYQ-Zz-pvb">
+            <objects>
+                <viewController id="gc0-We-vQK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v27-pK-bck"/>
+                        <viewControllerLayoutGuide type="bottom" id="kUa-gg-u6t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LRF-px-ddh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bhr-qZ-Dxe">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ㄌㄐ獅子" translatesAutoresizingMaskIntoConstraints="NO" id="4jW-zc-foa">
+                                <rect key="frame" x="55" y="80" width="286" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FqD-LG-fPX">
+                                <rect key="frame" x="55" y="381" width="286" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">效果怪獸 等級2 光 念動力族 1200/500
+「星茲 膽小獅子」的①的效果一回合只能使用一次。
+①：把場上的這張卡片除外才能發動。從手牌把一隻等級3以上的「星茲」怪獸特殊召喚。這個效果在對方回合也能發動。
+②：一回合一次，支付生命值500，以除外的自己的三隻「星茲」怪獸為對象才能發動。那些卡片回到墓地，給予對方生命值500傷害。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="魔星茲 膽小獅子" id="iHc-D2-NvY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9hT-Ue-V6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5935" y="1560"/>
+        </scene>
+        <!--星茲 黑暗淑女-->
+        <scene sceneID="yQq-QP-CJR">
+            <objects>
+                <viewController id="hak-Ci-g5H" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MR7-F9-nSe"/>
+                        <viewControllerLayoutGuide type="bottom" id="edz-W1-htz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QbP-uU-iZX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RM1-zy-tt3">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kozmo dark lady" translatesAutoresizingMaskIntoConstraints="NO" id="1lU-9E-WYI">
+                                <rect key="frame" x="55" y="80" width="286" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZn-V6-Jez">
+                                <rect key="frame" x="55" y="381" width="286" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">效果怪獸 等級5 闇 念動力族 2200/1800
+「星茲 黑暗淑女」的①的效果一回合只能使用一次。
+①：把場上的這張卡片除外才能發動。從手牌把一隻等級6以上的「星茲」怪獸特殊召喚。這個效果在對方回合也能發動。
+②：一回合一次，這張卡片以外的怪獸的效果發動時，支付生命值1000才能發動。那個發動無效並破壞。這個效果在對方回合也能發動。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="星茲 黑暗淑女" id="7qW-xQ-1Pe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ml-OZ-Zg4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6806" y="1560"/>
+        </scene>
+        <!--星茲 地行者-->
+        <scene sceneID="R0V-sf-zBC">
+            <objects>
+                <viewController id="GKs-ZD-bF5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Hc-8p-ub5"/>
+                        <viewControllerLayoutGuide type="bottom" id="qsZ-BP-yjE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="28a-tE-V1q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SYS-HA-siG">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="長腳叔叔" translatesAutoresizingMaskIntoConstraints="NO" id="7qe-ob-i6l">
+                                <rect key="frame" x="55" y="80" width="286" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jor-m9-HaT">
+                                <rect key="frame" x="55" y="381" width="286" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">效果怪獸 等級6 闇 機械族 2400/1200
+①：自己場上的「星茲」卡片被對方的效果破壞的場合，可以作為代替把那張卡以外的自己場上的「星茲」卡片破壞。
+②：這張卡片被戰鬥·卡片效果破壞送入墓地的場合，把墓地的這張卡除外才能發動。從牌組把一隻等級5以下的「星茲」怪獸特殊召喚。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="星茲 地行者" id="Bba-z0-d5E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cwi-gn-ytw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7645" y="1560"/>
+        </scene>
+        <!--星茲 黑暗行星-->
+        <scene sceneID="G1b-vS-cTr">
+            <objects>
+                <viewController id="QlS-TP-SUG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Iyd-Sn-8Gr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uhk-H1-KOV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Npn-zI-sWN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ONu-69-eqG">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kozmo dark planet" translatesAutoresizingMaskIntoConstraints="NO" id="5a0-Ww-J7c">
+                                <rect key="frame" x="55" y="80" width="286" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIx-ao-E7y">
+                                <rect key="frame" x="55" y="381" width="286" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">效果怪獸 等級10 闇 機械族 4000/4000
+這張卡片不能通常召喚。從手牌把等級合計直到10以上的「星茲」怪獸除外的場合才能從手牌特殊召喚。
+①：這張卡片不能成為對方的卡片的效果的對象。
+②：魔法卡發動時才能發動。從自己墓地把一隻「星茲」怪獸除外那個發動無效並破壞。這個效果在對方回合也能發動。
+③：這張卡片被戰鬥·卡片效果破壞送入墓地的場合，把墓地的這張卡片除外才能發動。從牌組把一隻等級9以下的「星茲」怪獸加入手牌。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="星茲 黑暗行星" id="c0L-At-X9c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Xx-oJ-W9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5935" y="2295"/>
+        </scene>
+        <!--星茲鎮 -->
+        <scene sceneID="gWk-fb-CKf">
+            <objects>
+                <viewController id="P7V-AT-LG7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YzP-wc-YBx"/>
+                        <viewControllerLayoutGuide type="bottom" id="bEA-nA-9Bb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tNj-rZ-d5Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ji-y1-rqH">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="抽不到星茲陣" translatesAutoresizingMaskIntoConstraints="NO" id="nuU-mq-BlK">
+                                <rect key="frame" x="55" y="80" width="286" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jw5-xh-4WW">
+                                <rect key="frame" x="55" y="381" width="286" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">場地魔法
+①：一回合一次，選擇除外區我方一張「Kozmo」怪獸來發動，該怪獸加入手牌，
+我方失去該怪獸原等級x100生命值。
+②：一回合一次，展示手牌任意數量「Kozmo」怪獸，將那些卡洗回牌組，之後抽出相同
+張數的牌。
+③：場地區域的此卡被卡片效果破壞的場合可以發動，從牌組將一張「Kozmo」卡片加入
+手牌。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="星茲鎮 " id="pj4-LF-umh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ct-ou-GgC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6806" y="2295"/>
+        </scene>
+        <!--星兹光劍-->
+        <scene sceneID="AeH-D5-cxB">
+            <objects>
+                <viewController id="cn9-EX-AXd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HAw-DE-Htg"/>
+                        <viewControllerLayoutGuide type="bottom" id="TSX-Co-IOc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Bm-D1-N8C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Clx-6k-pGK">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuV-AJ-Qb1">
+                                <rect key="frame" x="55" y="381" width="286" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">僅能裝備在超能族"Kozmo"怪獸
+①：裝備怪獸攻擊力·守備力上升500
+②：裝備怪獸在同一次戰鬥階段中最多可以攻擊怪獸2次
+③：裝備怪獸向守備表示怪獸攻擊的場合，給予攻擊力超過守備力數值的傷害
+④：此卡從場上送墓的場合，可以支付800生命值，把此卡加入手牌</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="裝備" translatesAutoresizingMaskIntoConstraints="NO" id="LiG-Wl-6HU">
+                                <rect key="frame" x="55" y="80" width="286" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="星兹光劍" id="jxK-kJ-hBe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P4y-84-maa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7645" y="2295"/>
+        </scene>
+        <!--星茲魔力-->
+        <scene sceneID="U60-B5-q6v">
+            <objects>
+                <viewController id="hXW-ot-a0j" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="efT-gt-VJf"/>
+                        <viewControllerLayoutGuide type="bottom" id="s8h-bm-OiA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SmB-i5-qye">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lTR-AC-6F8">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="感受原力" translatesAutoresizingMaskIntoConstraints="NO" id="GDO-9v-j0h">
+                                <rect key="frame" x="55" y="80" width="286" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="效果：選擇自己場上1只「星茲」怪獸；破壞那只怪獸，把對方的場上或者墓地的1張卡除外。「星茲魔力」在1回合只能發動1張。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZd-0B-dzV">
+                                <rect key="frame" x="55" y="381" width="286" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="星茲魔力" id="r1W-Mw-WXU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Znl-Yg-rHc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5935" y="3092"/>
+        </scene>
+        <!--星茲悲嘆-->
+        <scene sceneID="ygw-6p-4vj">
+            <objects>
+                <viewController id="PTT-gF-p0R" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fqZ-En-yAb"/>
+                        <viewControllerLayoutGuide type="bottom" id="6aI-8G-9YW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rMy-pz-CDY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NXV-it-xxG">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="無用永續" translatesAutoresizingMaskIntoConstraints="NO" id="xo0-yV-DZI">
+                                <rect key="frame" x="55" y="80" width="286" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bo-jH-2Co">
+                                <rect key="frame" x="55" y="381" width="286" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">永續陷阱
+①：「星茲」怪獸戰鬥破壞的怪獸的場合不會送入墓地而是回到牌組。
+②：把自己墓地的這張卡片除外才能發動。這個回合，自己場上的「星茲」怪獸的戰鬥第一次讓自己受到戰鬥傷害變成讓自己生命值回復那個數值。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="星茲悲嘆" id="530-h4-GPn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dc4-oi-ZCp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6806" y="3091"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="kozmo dark destroyer" width="512" height="730"/>
+        <image name="kozmo dark lady" width="594" height="864"/>
+        <image name="kozmo dark planet" width="552" height="804"/>
+        <image name="kozmo girl" width="566" height="830"/>
+        <image name="kozmo sliprider" width="424" height="592"/>
+        <image name="kozmo starwman" width="424" height="608"/>
+        <image name="ㄌㄐ獅子" width="352" height="510"/>
+        <image name="三角肌" width="334" height="496"/>
+        <image name="先驅" width="350" height="502"/>
+        <image name="太戰機" width="352" height="508"/>
+        <image name="感受原力" width="356" height="502"/>
+        <image name="抽不到星茲陣" width="352" height="508"/>
+        <image name="星茲膳魔女" width="354" height="506"/>
+        <image name="暗黑星時者" width="352" height="506"/>
+        <image name="無用永續" width="340" height="498"/>
+        <image name="裝備" width="348" height="496"/>
+        <image name="邪魔女" width="346" height="502"/>
+        <image name="鐵罐" width="354" height="510"/>
+        <image name="長腳叔叔" width="346" height="504"/>
+        <image name="風暴冰" width="356" height="508"/>
+    </resources>
 </document>
